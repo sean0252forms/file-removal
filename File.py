@@ -1,13 +1,13 @@
 import os
 
-directory = 'FOLDER_PATH'
+directory = '~/node_modules'
 files = os.listdir(directory)
 for file in files:
     if (file[(len(file)-3):]=='ini'):
         print(file)
     else:
         try:
-            os.remove(('C:/Users/Riccardo/Downloads/'+file))
+            os.remove(('~/node_modules/'+file))
             print("file rimosso :", file)
 
         except:
